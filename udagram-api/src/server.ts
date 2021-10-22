@@ -20,6 +20,7 @@ const port = 8080;
   } catch (err) {
     console.log(`Error connecting to the database: ${err}`);
   }
+  
   await sequelize.addModels(V0_FEED_MODELS);
   await sequelize.addModels(V0_USER_MODELS);
   await sequelize.sync();
