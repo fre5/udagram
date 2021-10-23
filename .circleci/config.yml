@@ -9,9 +9,6 @@ jobs:
     steps:
       - node/install
       - checkout
-      - node/test:
-          version: '12.13.0'
-          pkg-manager: npm
       - run :
           name: Install Front-End Dependencies
           command: |
