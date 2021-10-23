@@ -6,7 +6,7 @@ jobs:
   build: 
     docker:
       - image: cimg/base:stable
-    working_directory: ~/../udagram
+    working_directory: ~/udagram
     steps:
       - node/install
       - run :
