@@ -6,9 +6,10 @@ jobs:
   build: 
     docker:
       - image: cimg/base:stable
-    working_directory: ~/..
     steps:
       - node/install
+      - checkout:
+          path: ~/udagram
       - run :
           name: Install Front-End Dependencies
           command: |
