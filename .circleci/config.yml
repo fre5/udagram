@@ -7,9 +7,6 @@ jobs:
     docker:
       - image: "cimg/base.stable"
     steps:
-      - node/test:
-          version: '12.13.0'
-          pkg-manager: npm
       - run :
           name: Install Front-End Dependencies
           command: |
