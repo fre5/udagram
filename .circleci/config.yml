@@ -25,7 +25,7 @@ jobs:
           command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
       - run:
           name: Install Node version 14 using NVM
-          command: nvm install 14 
+          command: nvm install 14
       - run:
           name: Use Node version 14
           command: nvm use 14    
