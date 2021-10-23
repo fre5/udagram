@@ -18,9 +18,18 @@ jobs:
           command: |
             npm run backend:install
       - run:
+          name: Get and install node version manager.
+          command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+      - run:
+          name: Install Node version 14 using NVM
+          command: nvm install 14 
+      - run:
+          name: Use Node version 14
+          command: nvm use 14    
+      - run:
           name: Front-End Build
           command: |
-            cd udagram-frontend && ng build --openssl-legacy-provider
+            npm run frontend:build
       - run:
           name: Back-End Build
           command: |
