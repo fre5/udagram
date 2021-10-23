@@ -1,7 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@4.7
-  #aws-cli: circleci/aws-cli@2.0.3
+  node: circleci/node@4.1.0
 jobs:
   build: 
     docker:
@@ -9,19 +8,19 @@ jobs:
     steps:
       - node/install
       - checkout
-      - run :
+      - run:
           name: Install Front-End Dependencies
           command: |
             npm run frontend:install
-      - run : 
+      - run: 
           name: Front-End Build
           command: |
             npm run frontend:build
-      - run :
+      - run:
           name: Install Back-End Dependencies
           command: |
             npm run backend:install
-      - run :
+      - run:
           name: Back-End Build
           command: |
             npm run backend:build
