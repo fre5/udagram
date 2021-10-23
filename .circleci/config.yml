@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Front-End Build
           command: |
-            npm run frontend:build
+            cd udagram-frontend && ng build --openssl-legacy-provider
       - run:
           name: Back-End Build
           command: |
