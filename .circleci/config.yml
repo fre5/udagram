@@ -18,10 +18,6 @@ jobs:
           command: |
             npm run backend:install
       - run:
-          name: Update Angular
-          command: | 
-            ng update
-      - run:
           name: Update NPM
           command: | 
             npm update
