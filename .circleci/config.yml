@@ -5,7 +5,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: "cimg/base:12.13.0"
+      - image: "circleci/node:12.13.0"
     steps:
       - node/install
       - checkout
