@@ -12,7 +12,7 @@ jobs:
       - checkout
       - aws-elastic-beanstalk/setup
       - run:
-          name: Front-End Install
+          name: Front-End Install 
           command: |
             npm run frontend:install
       - run:
