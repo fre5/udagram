@@ -15,6 +15,7 @@ http://udacitygram-frontend.s3-website-us-west-2.amazonaws.com/home
 
 ## AWS
 ### Relational Database Service (RDS)
+![RDS Management Console](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/EB%20Management%20Console.png)
 
 ### Elastic Beanstalk (EB)
 
