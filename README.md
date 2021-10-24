@@ -25,7 +25,9 @@ http://udacitygram-frontend.s3-website-us-west-2.amazonaws.com/home
 ![Udagram AWS Architecture](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/Udagram.jpg)
 
 ## CircleCI Architecture Diagram
-![Udagram CircleCI](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/UdagramCircleCI.jpg)
+![Udagram CircleCI Successful Build Pipeline](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/Udagram%20CircleCI%20Pipeline.jpg)
+
+![Udagram CircleCI Successful Build Pipeline](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/UdagramCircleCI.png)
 
 ### CircleCI Environment Variables
 ![Udagram CircleCI Environment Variables](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/Environment%20Variables%20-%20udagram.png)
