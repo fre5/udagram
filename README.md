@@ -4,7 +4,6 @@ Udagram is a startup project by Udacity used as students final project to demons
 ## Application URL
 http://udacitygram-frontend.s3-website-us-west-2.amazonaws.com/home
 
-
 ## Infrastructure outline
 - This project is setup using a personal AWS account
 - Startup project file cloned from https://github.com/udacity/nd0067-c4-deployment-process-project-starter
@@ -13,16 +12,43 @@ http://udacitygram-frontend.s3-website-us-west-2.amazonaws.com/home
 - AWS S3 with 3 buckets setup for application post files, front end build, and another front end test build. 
 - CircleCI is setup with a GitHub repository https://github.com/fre5/udagram, configuration file here https://github.com/fre5/udagram/blob/main/.circleci/config.yml and Environment Variables set with each appropriate values from .env file that is stored locally. 
 
-## AWS
-### Relational Database Service (RDS)
-![RDS Management Console](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/EB%20Management%20Console.png)
+## AWS RDS Console
+![RDS Management Console](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/RDS%20Management%20Console.png)
 
-### Elastic Beanstalk (EB)
+## AWS EB Console
+![EB Management Console](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/EB%20Management%20Console.png)
 
-### Simple Storage Service (S3)
+## AWS S3 Console
+![S3 Management Console](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/S3%20Management%20Console.png)
 
-## CircleCi 
+## AWS Architecture Diagram
+![Udagram AWS Architecture](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/Udagram.jpg)
 
+## CircleCI Architecture Diagram
+![Udagram CircleCI](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/UdagramCircleCI.jpg)
+
+### CircleCI Environment Variables
+![Udagram CircleCI Environment Variables](https://raw.githubusercontent.com/fre5/udagram/main/udagram-diagrams/Environment%20Variables%20-%20udagram.png)
+
+### CircleCI Pipeline Outline
+- CircleCI initialized with version 2.1
+- Orbs used are:
+  - Node: circleci/node@4.7
+  - AWS CLI: circleci/aws-cli@1.3.1
+  - EB CLI: circleci/aws-elastic-beanstalk@2.0.1
+- Pipeline steps:
+  - Install Node latest stable version
+  - Checkout
+  - AWS CLI setup
+  - AWS Elastic Beanstalk setup
+  - Application Frontend install
+  - Application Backend install
+  - Install Node Version Manager
+  - Install Node version 14 to fix front end build failed bug with openssl related to node beyond version 14
+  - Application Frontend build
+  - Application Backend build
+  - Application Frontend deploy to S3
+  - Application Backend deploy to Elastic Beanstalk with EB CLI using eb deploy
 
 ## Project requirement
 
