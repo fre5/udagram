@@ -1,5 +1,5 @@
 # Udagram
-Udagram is a startup project by Udacity used as students final project to demonstrate the ability to host a full stack application with Amazon Web Services and the workflow of automating CI/CD pipeline with CircleCI.
+In this project I used Udacity's startup application Udagram to demonstrate the process of hosting a full stack application with Amazon Web Services and to showcase the workflow of automating CI/CD pipeline with CircleCI.
 
 ## Application URL
 http://udacitygram-frontend.s3-website-us-west-2.amazonaws.com/home
