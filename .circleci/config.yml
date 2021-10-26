@@ -16,42 +16,22 @@ jobs:
           name: Front-End Install 
           command: |
             npm run frontend:install
-            filters:
-              branches:
-                only:
-                  - main
       - run:
           name: Back-End Install
           command: |
             npm run backend:install
-            filters:
-              branches:
-                only:
-                  - main
       - run:
           name: Get and install node version manager.
           command: |
             curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-            filters:
-              branches:
-                only:
-                  - main
       - run:
           name: Install Node version 14 using NVM
           command: |
             nvm install 14 
-            filters:
-              branches:
-                only:
-                  - main
       - run:
           name: Use Node version 14
           command: | 
             nvm use 14
-            filters:
-              branches:
-                only:
-                  - main
       - run:
           name: Front-End Build
           command: |
@@ -60,7 +40,6 @@ jobs:
               branches:
                 only:
                   - main
-            
       - run:
           name: Back-End Build 
           command: |
@@ -73,15 +52,7 @@ jobs:
           name: Front-End Deploy
           command: |
             npm run frontend:deploy
-            filters:
-              branches:
-                only:
-                  - main
       - run:
           name: Back-End Deploy
           command: |
             npm run backend:deploy
-            filters:
-              branches:
-                only:
-                  - main
