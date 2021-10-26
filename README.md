@@ -4,7 +4,7 @@ In this project I used Udacity's startup application Udagram to demonstrate the 
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/fre5/udagram)
 
 ## Application URL
-http://udacitygram-frontend.s3-website-us-west-2.amazonaws.com/home
+http://udacitygram-frontend.s3-website-us-west-2.amazonaws.com
 
 ## Infrastructure outline
 - This project is setup using a personal AWS account

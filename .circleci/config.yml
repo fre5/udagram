@@ -33,10 +33,18 @@ jobs:
           name: Front-End Build
           command: |
             npm run frontend:build
+            filters:
+              branches:
+                only:
+                - main
       - run:
           name: Back-End Build 
           command: |
             npm run backend:build
+            filters:
+              branches:
+                only:
+                - main
       - run:
           name: Front-End Deploy
           command: |
