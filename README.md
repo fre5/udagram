@@ -1,10 +1,10 @@
 # Udagram
 In this project I used Udacity's startup application Udagram to demonstrate the process of hosting a full stack application with Amazon Web Services and to showcase the workflow of automating CI/CD pipeline with CircleCI.
 
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/fre5/udagram)
+[//]: [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/fre5/udagram)
 
-## Application URL
-http://udacitygram-frontend.s3-website-us-west-2.amazonaws.com
+[//]: ## Application URL
+[//]: http://udacitygram-frontend.s3-website-us-west-2.amazonaws.com
 
 ## Infrastructure outline
 - This project is setup using a personal AWS account
